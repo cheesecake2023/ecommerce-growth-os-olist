@@ -19,6 +19,9 @@ Leaders need a trustworthy view of growth leaks (late deliveries, cancellations,
 - **Reviews:** joined at order grain (use numeric `review_score` only)
 - **Principle:** keep raw ingest resilient; enforce typing & business rules in the **metric layer** (views)
 
+➡️ **Details:** See [Business Questions & Notes](docs/business-qs-and-notes.md) for the dataset table, metric specs, and action plan.
+
+
 ### ERD (logical)
 ```mermaid
 erDiagram
