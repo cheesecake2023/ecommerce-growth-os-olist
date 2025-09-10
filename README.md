@@ -29,14 +29,4 @@ erDiagram
   ORDER_ITEMS }o--|| SELLERS : sold_by
   ORDERS }o--|| CUSTOMERS : placed_by
 
-## Metric Catalog (definitions I used)
-
-| Metric | Definition | Grain (time) | Main cuts (dimensions) | Notes & assumptions |
-|---|---|---|---|---|
-| **GMV** | Sum of item price + freight for qualifying items | Month (by purchase date) | category (English), seller_state, customer_state | Exclude `canceled`. You can report both **in-flight** (created/processing/shipped) and **delivered-only**; call out which you used in Findings. |
-| **On-time delivery rate** | % of **delivered** orders where delivered_date ≤ estimated_date | Month (by delivered date) | seller_state, customer_state, category (English) | Only `order_status='delivered'`. Filter obviously bad timestamps if any. |
-| **Cancellation rate** | % of orders with `order_status='canceled'` | Month (by purchase date) | category (English), seller_state | Signals stock/ops issues earlier in the funnel. |
-| **30-day repeat rate** | % of **new-customer cohorts** who place a 2nd order within 30 days | Cohort month (first purchase) | acquisition month, customer_state | Early retention signal; cohort logic documented. |
-| **NPS proxy** | %Promoters (scores 4–5) − %Detractors (1–2) using numeric review_score | Month (by purchase date) | category (English), seller_state | Language-agnostic; we use the numeric score only. |
-| **GMV at risk (late)** | GMV of **late-delivered** orders ÷ GMV of delivered orders | Month (by purchase date) | seller→customer lane, category (English) | Prioritizes ops work on high-impact lanes. |
 
