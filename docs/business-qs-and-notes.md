@@ -46,7 +46,7 @@ This doc complements the README with the questions we answer, why they matter, a
 - Reviews: use `review_score` numeric only.  
 - Categories: Portuguese mapped to English via translation table.  
 
-## 5) Initial Findings (fill after you look at the views)
+## 5) Initial Findings
 
 - Late deliveries represented {9.9}% of delivered GMV in {August 2018}, totaling ${97362.0} out of ${985492.0}. 
 - In September 2018, the late-delivery rate was 100.0% and the average review score was 1.98; in October 2016, the late rate was 0.0% with an average score of 4.12—a +2.14-point difference, confirming that higher lateness coincides with lower customer scores.
