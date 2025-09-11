@@ -13,7 +13,7 @@ This doc complements the README with the questions we answer, why they matter, a
 | Is sentiment falling where lateness rises? | Tie ops to CX outcomes | `v_delay_vs_reviews`, `v_nps_proxy` | Proactive CS, policy, ETA comms |
 | How much GMV is at risk due to lateness? | Prioritize what to fix first | `v_gmv_at_risk` | Fix top late lanes/categories |
 
-> Tip for interviews: frame each insight as *“decision → action → expected impact.”*
+
 
 ## 2) Dataset Inventory (what we used)
 
