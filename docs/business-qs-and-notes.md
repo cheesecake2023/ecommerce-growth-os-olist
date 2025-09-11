@@ -53,8 +53,10 @@ This doc complements the README with the questions we answer, why they matter, a
 
 ## 6) Actions (prioritized)
 
-| Action | Owner | Rationale | Expected impact | Next step |
+| Action | Owner | Rationale (from findings) | Expected impact | Next step |
 |---|---|---|---|---|
-| Tighten SLA on top 3 late lanes | Ops | High GMV at risk | +2 pp on-time → ~$<est> GMV | Pilot with top sellers |
-| Proactive CS for predicted-late | CX | Reduce detractors | ↑ NPS / retention | Messaging test |
-| QA for high-cancel categories | Supply | Stock/quality issues | ↓ cancel rate | Vendor audit |
+| Reduce late-delivery share from **9.9% → 7.9%** (–2 pp) | Ops / Logistics | In **Aug 2018**, **9.9%** of delivered GMV was late (**$97,362 / $985,492**). Months with higher lateness had much lower review scores (e.g., **Sep 2018: 100% late → 1.98** vs **Oct 2016: 0% late → 4.12**). | Cuts late-GMV exposure by ≈ **$19.7k** for a –2 pp improvement in Aug 2018; likely lifts sentiment. | Identify top offending lanes/sellers and tighten SLAs; monitor `v_gmv_at_risk` monthly. |
+| Proactive CS when ETA risk detected | CX | Higher lateness coincides with lower scores; intervening before delivery can mitigate detractors. | Target +0.2–0.4 uplift in avg review during high-late periods; reduce detractor share. | Trigger CS outreach when predicted miss (ETA window breached). |
+| “First-order reliability” program | Ops / PM | First experience drives retention; we’ll quantify repeat uplift on on-time vs late first orders. | Expect **pp uplift** in 30-day repeat for on-time first orders (fill with query result). | Run the first-order repeat uplift query; pilot expedited handling for first orders. |
+| Audit high-cancel categories | Supply / QA | Cancellation rate is pure breakage and erodes trust. | Aim –1 pp cancel rate in top categories without harming GMV. | Slice `v_cancel_rate` by category (English labels) and fix top problem SKUs/vendors. |
+
