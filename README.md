@@ -21,6 +21,18 @@ Leaders need a trustworthy view of growth leaks (late deliveries, cancellations,
 
 ➡️ **Details:** See [Business Questions & Notes](docs/business-qs-and-notes.md) for the dataset table, metric specs, and action plan.
 
+## So what? (executive takeaways)
+
+- **Reliability is the leak:** Late deliveries were **9.9%** of delivered GMV in **Aug 2018** (≈ **$97,362 / $985,492**).  
+- **CX tracks reliability:** When lateness spiked, scores dropped — **Sep 2018: 100% late → 1.98** avg review vs **Oct 2016: 0% late → 4.12** (**+2.14 pts**).  
+- **Actionable target:** Cut late share by **2 pp** next month ⇒ ≈ **$19.7k** less GMV exposed to late delivery (0.02 × 985,492).
+
+### What I’d do next
+- **Tighten SLAs on top lanes** (seller_state → customer_state) and monitor `v_gmv_at_risk`.  
+- **Proactive CX for predicted-late orders** (ETA breach signals).  
+- **Category QA for cancellations** (slice `v_cancel_rate` by English category).
+
+
 
 ### ERD (logical)
 ```mermaid
