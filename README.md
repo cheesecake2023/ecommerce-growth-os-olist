@@ -1,5 +1,10 @@
 # E-commerce Growth OS (Olist on BigQuery)
 
+## Dashboard (Looker Studio)
+
+<img width="1280" height="992" alt="image" src="https://github.com/user-attachments/assets/9784e21b-f098-41ac-973a-3dd94f659ea8" />
+
+
 **TL;DR**  
 I built a decision-ready KPI layer in BigQuery for a marketplace: GMV, On-time Delivery, Cancellations, 30-day Repeat, and an NPS proxy—plus diagnostics that show how delivery reliability impacts customer sentiment and GMV at risk.
 
